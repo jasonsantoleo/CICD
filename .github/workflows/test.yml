@@ -1,8 +1,8 @@
-name: CI/CD for my react app
+name: CICD understanding 
 on:
   push:
-    branches:
-      - main
+    branch:
+      -main
 jobs:
   build:
     runs-on: ubuntu-latest
