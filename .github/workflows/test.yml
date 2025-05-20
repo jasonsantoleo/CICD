@@ -6,7 +6,6 @@ on:
       - main
 
 jobs:
-  # Build Job
   build:
     runs-on: ubuntu-latest
     steps:
@@ -34,7 +33,6 @@ jobs:
           name: production-files
           path: ./app/build
 
-  # Deploy Job
   deploy:
     needs: build
     runs-on: ubuntu-latest
